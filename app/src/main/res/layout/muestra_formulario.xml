@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/verNombre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/verApellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/text_modify" />
+    <TextView
+        android:id="@+id/verApellido"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/verPreferencias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verNombre"
+        android:background="@drawable/text_modify" />
+    <TextView
+        android:id="@+id/verPreferencias"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/verEstadoCivil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verApellido"
+        android:background="@drawable/text_modify" />
+    <TextView
+        android:id="@+id/verEstadoCivil"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_vertical"
+        app:layout_constraintBottom_toTopOf="@id/btnVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verPreferencias"
+        android:background="@drawable/text_modify" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Volver"
+        android:onClick="volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verEstadoCivil" />
+
+    <TextView
+        android:id="@+id/verDatos"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/btnVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/text_modify" />
+</androidx.constraintlayout.widget.ConstraintLayout>
